@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:ital,wght@0,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    background: gray;
+    background-image: url(beach2.jpeg), url(bye.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    animation: fadein 1s 1 1s linear forwards;
+}
+
+@keyframes fadein {
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.wrapper{
+    width: 770px;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.prof{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper .content-box{
+    padding: 14px 20px 0;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.content-box .typing-text{
+    max-height: 225px;
+    overflow-y: auto;
+}
+
+.typing-text::-webkit-scrollbar{
+    width: 0;
+}
+
+.typing-text p{
+    font-size: 22px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+
+}
+
+.content-box .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+    padding: 12px 0;
+    border-top: 1px solid #ccc;
+
+}
+
+.content-box .result-details{
+    display: flex;
+    width: calc(100% - 140px);
+    justify-content: space-between;
+}
+
+
+.content button{
+    border: none;
+    outline: none;
+    width: 105px;
+    padding: 8px 0;
+    color: black;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+    background: fuchsia;
+    transition: transform 0.3s ease;
+}
+
+.content button:active{
+    transform: scale(0.97);
+}
+
+.result-details li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 22px;
+
+}
+
+.result-details li:not(:first-child){
+    border-left: 1px solid #ccc;
+    padding-left: 22px;
+}
+
+
+.result-details li p{
+    font-size: 19px;
+}
+
+
+.result-details li span{
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+}
